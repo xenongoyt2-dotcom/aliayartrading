@@ -1,0 +1,22 @@
+{
+  "name": "Ali Ayar Trading LTD",
+  "short_name": "Ali Ayar Trading",
+  "description": "Mercedes-Benz Yedek Parça Uzmanı - Kıbrıs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
