@@ -154,9 +154,9 @@ export function Footer() {
         hover:underline
       "
     >
-      Yaşar Ayar
+      Yaşar Ayar.
     </a>
-    .
+    
   </p>
 </div>
 
