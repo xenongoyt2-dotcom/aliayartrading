@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export function Hero() {
   return (
-    <section className="relative h-[550px] md:h-[650px] bg-gradient-to-br from-slate-900 to-slate-700">
+    <section className="relative h-screen md:h-screen bg-linear-to-br from-slate-900 to-slate-700">
       <Image
         src="/images/titlebar.jpg"
         alt="Ali Ayar Trading Mercedes-Benz Yedek Parça"
@@ -12,7 +12,7 @@ export function Hero() {
         className="object-cover opacity-40"
         priority
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-slate-900/90 via-slate-900/60 to-transparent" />
 
       <div className="relative h-full container mx-auto px-4 flex items-center">
         <div className="max-w-3xl text-white">

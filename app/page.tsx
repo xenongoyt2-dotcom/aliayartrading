@@ -63,7 +63,7 @@ export default function HomePage() {
                 Daha Fazla Bilgi
               </Link>
             </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative h-96 rounded-lg overflow-hidden">
               <Image src="/images/titlebar.jpg" alt="Ali Ayar Trading Mağaza" fill className="object-cover" />
             </div>
           </div>

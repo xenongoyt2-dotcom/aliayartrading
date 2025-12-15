@@ -75,7 +75,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <div>
             <Card>
               <CardContent className="p-0">
-                <div className="relative h-[400px] md:h-[500px] bg-muted">
+                <div className="relative h-96 md:h-screen bg-muted">
                   <Image
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}

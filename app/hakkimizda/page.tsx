@@ -44,25 +44,25 @@ export default function HakkimizdaPage() {
 
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <Check className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
+                  <Check className="h-6 w-6 text-primary mt-0.5 shrink-0" />
                   <span>Orijinal ve yan sanayi ürün seçenekleri</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
+                  <Check className="h-6 w-6 text-primary mt-0.5 shrink-0" />
                   <span>Hızlı teslimat ve güvenilir hizmet</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
+                  <Check className="h-6 w-6 text-primary mt-0.5 shrink-0" />
                   <span>Uzman kadro ve teknik destek</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
+                  <Check className="h-6 w-6 text-primary mt-0.5 shrink-0" />
                   <span>Rekabetçi fiyatlar ve kalite garantisi</span>
                 </div>
               </div>
             </div>
 
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative h-96 rounded-lg overflow-hidden">
               <Image src="/images/titlebar.jpg" alt="Ali Ayar Trading Mağaza" fill className="object-cover" />
             </div>
           </div>
