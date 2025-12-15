@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative h-screen md:h-screen bg-linear-to-br from-slate-900 to-slate-700">
       <Image
-        src="/images/titlebar.jpg"
+        src="/images/aliayararka.jpg"
         alt="Ali Ayar Trading Mercedes-Benz Yedek Parça"
         fill
         className="object-cover opacity-40"

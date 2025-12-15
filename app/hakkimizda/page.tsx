@@ -104,7 +104,6 @@ export default function HakkimizdaPage() {
                 <div className="text-sm text-muted-foreground space-y-1">
                   <p>Pazartesi - Cuma: 08:00 - 18:00</p>
                   <p>Cumartesi: 08:00 - 14:00</p>
-                  <p>Pazar: Kapalı</p>
                 </div>
               </CardContent>
             </Card>

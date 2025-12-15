@@ -35,11 +35,11 @@ export function Header() {
             <Link href="/" className="text-sm font-semibold hover:text-primary transition-colors">
               Ana Sayfa
             </Link>
-            <Link href="/urunler" className="text-sm font-semibold hover:text-primary transition-colors">
-              Ürünler
-            </Link>
             <Link href="/kategoriler" className="text-sm font-semibold hover:text-primary transition-colors">
               Kategoriler
+            </Link>
+            <Link href="/urunler" className="text-sm font-semibold hover:text-primary transition-colors">
+              Ürünler
             </Link>
             <Link href="/hakkimizda" className="text-sm font-semibold hover:text-primary transition-colors">
               Hakkımızda

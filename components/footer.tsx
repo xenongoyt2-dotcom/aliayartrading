@@ -134,9 +134,33 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Ali Ayar Trading LTD. Tüm hakları saklıdır.</p>
-        </div>
+<div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/60">
+  <p>
+    &copy; {new Date().getFullYear()} Ali Ayar Trading LTD. | Tüm Hakları Saklıdır. | Designed By
+    <a
+      href="https://www.instagram.com/cyp_yasar/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        ml-0
+        inline-block
+        px-2 py-0.5
+        rounded-md
+        text-primary-foreground
+        transition-all
+        duration-200
+        hover:bg-primary-foreground/10
+        hover:text-primary-foreground
+        hover:underline
+      "
+    >
+      Yaşar Ayar
+    </a>
+    .
+  </p>
+</div>
+
+
       </div>
     </footer>
   )
