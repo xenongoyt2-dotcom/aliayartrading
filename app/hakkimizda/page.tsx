@@ -102,8 +102,8 @@ export default function HakkimizdaPage() {
                 <Clock className="h-10 w-10 text-primary mb-4" />
                 <h3 className="font-bold text-lg mb-2">Çalışma Saatleri</h3>
                 <div className="text-sm text-muted-foreground space-y-1">
-                  <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                  <p>Cumartesi: 09:00 - 14:00</p>
+                  <p>Pazartesi - Cuma: 08:00 - 18:00</p>
+                  <p>Cumartesi: 08:00 - 14:00</p>
                   <p>Pazar: Kapalı</p>
                 </div>
               </CardContent>
