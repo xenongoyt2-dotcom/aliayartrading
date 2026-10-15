@@ -7,13 +7,13 @@ import { Button } from "@/components/ui/button"
 
 export function FloatingActions() {
   return (
-    <div className="fixed right-4 bottom-4 z-40 flex flex-col gap-3">
+    <div className="fixed bottom-[calc(0.75rem+env(safe-area-inset-bottom))] left-1/2 z-40 flex -translate-x-1/2 flex-row gap-2 rounded-full bg-background/95 p-2 shadow-lg backdrop-blur sm:left-auto sm:right-4 sm:bottom-4 sm:translate-x-0 sm:flex-col sm:gap-3 sm:bg-transparent sm:p-0 sm:shadow-none sm:backdrop-blur-none">
       <SocialLinks floating />
       {/* WhatsApp Button */}
       <Button
         asChild
         size="icon"
-        className="h-14 w-14 rounded-full shadow-lg bg-[#25D366] hover:bg-[#20bd5a] text-white"
+        className="h-12 w-12 sm:h-14 sm:w-14 rounded-full shadow-lg bg-[#25D366] hover:bg-[#20bd5a] text-white"
       >
         <a
           href="https://wa.me/905428509217"
@@ -28,7 +28,7 @@ export function FloatingActions() {
       </Button>
 
       {/* Phone Button */}
-      <Button asChild size="icon" className="h-14 w-14 rounded-full shadow-lg bg-primary hover:bg-primary/90">
+      <Button asChild size="icon" className="h-12 w-12 sm:h-14 sm:w-14 rounded-full shadow-lg bg-primary hover:bg-primary/90">
         <a href="tel:+905428509217" aria-label="Telefon ile ara">
           <Phone className="h-6 w-6" />
         </a>

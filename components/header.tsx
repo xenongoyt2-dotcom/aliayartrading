@@ -5,12 +5,21 @@ import { SocialLinks } from "@/components/social-links"
 
 import Link from "next/link"
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  useEffect(() => {
+    if (!isMenuOpen) return
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsMenuOpen(false)
+    }
+    window.addEventListener("keydown", onKeyDown)
+    return () => window.removeEventListener("keydown", onKeyDown)
+  }, [isMenuOpen])
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/90 shadow-sm">
       <div className="container mx-auto px-4">
@@ -47,7 +56,15 @@ export function Header() {
             <SocialLinks compact className="hidden xl:flex" />
 
             {/* Mobile Menu Toggle */}
-            <Button variant="ghost" size="icon" className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="lg:hidden h-11 w-11"
+              aria-label={isMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-navigation"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
@@ -55,34 +72,34 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t">
+          <div id="mobile-navigation" className="lg:hidden max-h-[calc(100dvh-5rem)] overflow-y-auto overscroll-contain py-4 pb-[calc(1rem+env(safe-area-inset-bottom))] border-t">
 
             {/* Mobile Nav Links */}
             <nav className="flex flex-col space-y-3">
               <Link
                 href="/"
-                className="text-sm font-semibold hover:text-primary transition-colors py-2"
+                className="text-sm font-semibold hover:text-primary transition-colors py-3"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Ana Sayfa
               </Link>
               <Link
                 href="/kategoriler"
-                className="text-sm font-semibold hover:text-primary transition-colors py-2"
+                className="text-sm font-semibold hover:text-primary transition-colors py-3"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Kategoriler
               </Link>
               <Link
                 href="/hakkimizda"
-                className="text-sm font-semibold hover:text-primary transition-colors py-2"
+                className="text-sm font-semibold hover:text-primary transition-colors py-3"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Hakkımızda
               </Link>
               <Link
                 href="/iletisim"
-                className="text-sm font-semibold hover:text-primary transition-colors py-2"
+                className="text-sm font-semibold hover:text-primary transition-colors py-3"
                 onClick={() => setIsMenuOpen(false)}
               >
                 İletişim

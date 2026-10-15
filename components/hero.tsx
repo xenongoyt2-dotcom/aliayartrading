@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export function Hero() {
   return (
-    <section className="relative h-screen md:h-screen bg-linear-to-br from-slate-900 to-slate-700">
+    <section className="relative min-h-[calc(100svh-5rem)] md:min-h-screen bg-linear-to-br from-slate-900 to-slate-700">
       <Image
         src="/images/aliayararka.jpg"
         alt="Ali Ayar Trading Mercedes-Benz Yedek Parça"
@@ -14,7 +14,7 @@ export function Hero() {
       />
         <div className="absolute inset-0 bg-linear-to-r from-slate-900/90 via-slate-900/60 to-transparent" />
 
-      <div className="relative h-full container mx-auto px-4 flex items-center">
+      <div className="relative min-h-[calc(100svh-5rem)] md:min-h-screen container mx-auto px-4 pt-12 pb-32 sm:py-16 flex items-center">
         <div className="max-w-3xl text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance leading-tight">
             Mercedes-Benz Yedek Parça Uzmanı

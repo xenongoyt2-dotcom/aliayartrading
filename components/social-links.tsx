@@ -38,7 +38,7 @@ export function SocialLinks({
           rel="noopener noreferrer"
           aria-label={`${name}: ${label}`}
           title={`${name}: ${label}`}
-          className={`inline-flex items-center gap-3 rounded-full transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-4 ${iconOnly ? "justify-center shrink-0 text-white shadow-lg " + background + (floating ? " h-14 w-14" : " h-10 w-10") : "text-sm"}`}
+          className={`inline-flex items-center gap-3 rounded-full transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-4 ${iconOnly ? "justify-center shrink-0 text-white shadow-lg " + background + (floating ? " h-12 w-12 sm:h-14 sm:w-14" : " h-10 w-10") : "text-sm"}`}
         >
           {iconOnly ? (
             <Icon aria-hidden="true" className={floating ? "h-6 w-6" : "h-5 w-5"} />
