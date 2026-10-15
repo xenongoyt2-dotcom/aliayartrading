@@ -46,8 +46,14 @@ export default function HomePage() {
                 Daha Fazla Bilgi
               </Link>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden">
-              <Image src="/images/titlebar.jpg" alt="Ali Ayar Trading Mağaza" fill className="object-cover" />
+            <div className="relative aspect-square rounded-lg overflow-hidden">
+              <Image
+                src="/images/ali-ayar-dukkan.png"
+                alt="Ali Ayar Trading dükkânı, tabelası ve önündeki Mercedes-Benz araçlar"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover object-[50%_55%]"
+              />
             </div>
           </div>
         </div>

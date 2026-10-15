@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     description: "Mercedes-Benz orijinal ve yan sanayi yedek parçaları. Kıbrıs'ta güvenilir hizmet.",
     images: [
       {
-        url: "/images/titlebar.jpg",
-        width: 1200,
-        height: 630,
+        url: "/images/ali-ayar-dukkan.png",
+        width: 941,
+        height: 1672,
         alt: "Ali Ayar Trading Mercedes-Benz Yedek Parça",
       },
     ],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ali Ayar Trading - Mercedes-Benz Yedek Parça",
     description: "Mercedes-Benz orijinal ve yan sanayi yedek parçaları. Kıbrıs'ta güvenilir hizmet.",
-    images: ["/images/titlebar.jpg"],
+    images: ["/images/ali-ayar-dukkan.png"],
   },
   robots: {
     index: true,
