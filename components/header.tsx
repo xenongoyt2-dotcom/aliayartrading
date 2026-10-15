@@ -1,5 +1,7 @@
 "use client"
 
+import { SocialLinks } from "@/components/social-links"
+
 import type React from "react"
 
 import Link from "next/link"
@@ -72,6 +74,8 @@ export function Header() {
               </a>
             </Button>
 
+            <SocialLinks compact className="hidden xl:flex" />
+
             {/* Mobile Menu Toggle */}
             <Button variant="ghost" size="icon" className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -140,6 +144,7 @@ export function Header() {
                 </a>
               </Button>
             </nav>
+            <SocialLinks className="mt-5 border-t pt-4" />
           </div>
         )}
       </div>

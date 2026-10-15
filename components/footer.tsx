@@ -1,3 +1,4 @@
+import { SocialLinks } from "@/components/social-links"
 import Link from "next/link"
 import Image from "next/image"
 import { Phone, MapPin } from "lucide-react"
@@ -130,6 +131,7 @@ export function Footer() {
               >
                 Haritada Görüntüle →
               </a>
+              <SocialLinks className="text-primary-foreground/80" />
             </div>
           </div>
         </div>

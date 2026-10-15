@@ -1,11 +1,14 @@
 "use client"
 
+import { SocialLinks } from "@/components/social-links"
+
 import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function FloatingActions() {
   return (
     <div className="fixed right-4 bottom-4 z-40 flex flex-col gap-3">
+      <SocialLinks compact className="flex-col rounded-full bg-background p-1 shadow-lg" />
       {/* WhatsApp Button */}
       <Button
         asChild

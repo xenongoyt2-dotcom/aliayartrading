@@ -1,3 +1,4 @@
+import { SocialLinks } from "@/components/social-links"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, Phone } from "lucide-react"
@@ -80,6 +81,12 @@ export default function IletisimPage() {
                     </Button>
                   </div>
                 </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-bold text-lg mb-4">Sosyal Medya</h3>
+                <SocialLinks />
               </CardContent>
             </Card>
           </div>

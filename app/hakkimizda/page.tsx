@@ -1,3 +1,4 @@
+import { SocialLinks } from "@/components/social-links"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -118,6 +119,7 @@ export default function HakkimizdaPage() {
           <p className="text-lg mb-8 text-primary-foreground/90">
             Bizimle iletişime geçin, aradığınız her parçayı sizin için bulalım.
           </p>
+          <SocialLinks className="items-center mb-6" />
           <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
             <Link href="/iletisim">İletişime Geç</Link>
           </Button>
