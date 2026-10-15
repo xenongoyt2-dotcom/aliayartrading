@@ -134,7 +134,7 @@ export function Footer() {
   <p>
     &copy; {new Date().getFullYear()} Ali Ayar Trading LTD. | Tüm Hakları Saklıdır. | Designed By
     <a
-      href="https://www.instagram.com/cyp_yasar/"
+      href="https://www.instagram.com/yasar.ayarr/"
       target="_blank"
       rel="noopener noreferrer"
       className="
