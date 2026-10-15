@@ -2,7 +2,7 @@ import { CategoryCard } from "@/components/category-card"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Ürün Kategorileri | Ali Ayar Trading - Mercedes-Benz Yedek Parça",
+  title: "Kategoriler | Ali Ayar Trading - Mercedes-Benz Yedek Parça",
   description:
     "Mercedes-Benz yedek parça kategorileri: Fren sistemleri, filtreler, contalar, aydınlatma, suspensiyon parçaları ve daha fazlası.",
   keywords:
@@ -14,7 +14,7 @@ export default function KategorilerPage() {
     <main className="py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Ürün Kategorileri</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Kategoriler</h1>
           <p className="text-lg text-muted-foreground">
             Mercedes-Benz araçlarınız için ihtiyaç duyduğunuz tüm yedek parça kategorilerine göz atın. Orijinal ve yan
             sanayi ürünler geniş yelpazemizde.
