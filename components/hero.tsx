@@ -6,10 +6,10 @@ export function Hero() {
   return (
     <section className="relative h-screen md:h-screen bg-linear-to-br from-slate-900 to-slate-700">
       <Image
-        src="/images/ali-ayar-dukkan.png"
+        src="/images/aliayararka.jpg"
         alt="Ali Ayar Trading Mercedes-Benz Yedek Parça"
         fill
-        className="object-cover object-[50%_55%] opacity-40"
+        className="object-cover opacity-40"
         priority
       />
         <div className="absolute inset-0 bg-linear-to-r from-slate-900/90 via-slate-900/60 to-transparent" />
