@@ -25,7 +25,7 @@ export function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="text-base font-semibold">
-              <Link href="/urunler">Ürünleri İncele</Link>
+              <Link href="/kategoriler">Kategorileri İncele</Link>
             </Button>
             <Button
               asChild

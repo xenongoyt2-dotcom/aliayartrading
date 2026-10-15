@@ -1,18 +1,3 @@
-export interface Product {
-  id: string
-  name: string
-  slug: string
-  description: string
-  partNumber: string
-  category: string
-  image: string
-  isOem: boolean
-  compatibility: string[]
-  specifications: Record<string, string>
-}
-
-export const products: Product[] = []
-
 export const categories = [
   { name: "Fren Diskleri", slug: "fren-diskleri" },
   { name: "Fren Balataları", slug: "fren-balatalari" },

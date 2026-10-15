@@ -2,29 +2,15 @@
 
 import { SocialLinks } from "@/components/social-links"
 
-import type React from "react"
 
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { Search, Menu, X, Phone } from "lucide-react"
+import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { useRouter } from "next/navigation"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [searchQuery, setSearchQuery] = useState("")
-  const router = useRouter()
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (searchQuery.trim()) {
-      router.push(`/arama?q=${encodeURIComponent(searchQuery)}`)
-      setSearchQuery("")
-    }
-  }
-
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/90 shadow-sm">
       <div className="container mx-auto px-4">
@@ -40,9 +26,6 @@ export function Header() {
             <Link href="/kategoriler" className="text-sm font-semibold hover:text-primary transition-colors">
               Kategoriler
             </Link>
-            <Link href="/urunler" className="text-sm font-semibold hover:text-primary transition-colors">
-              Ürünler
-            </Link>
             <Link href="/hakkimizda" className="text-sm font-semibold hover:text-primary transition-colors">
               Hakkımızda
             </Link>
@@ -51,21 +34,8 @@ export function Header() {
             </Link>
           </nav>
 
-          {/* Search & Actions */}
+          {/* İletişim ve menü */}
           <div className="flex items-center gap-3">
-            {/* Search Form */}
-            <form onSubmit={handleSearch} className="hidden md:flex items-center">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                <Input
-                  type="search"
-                  placeholder="Ürün ara..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 w-[200px] lg:w-[280px] border-2 focus-visible:border-primary"
-                />
-              </div>
-            </form>
 
             <Button asChild size="lg" className="hidden md:inline-flex">
               <a href="tel:+905428509217">
@@ -86,19 +56,6 @@ export function Header() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t">
-            {/* Mobile Search */}
-            <form onSubmit={handleSearch} className="mb-4">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                <Input
-                  type="search"
-                  placeholder="Ürün ara..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 w-full"
-                />
-              </div>
-            </form>
 
             {/* Mobile Nav Links */}
             <nav className="flex flex-col space-y-3">
@@ -108,13 +65,6 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Ana Sayfa
-              </Link>
-              <Link
-                href="/urunler"
-                className="text-sm font-semibold hover:text-primary transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Ürünler
               </Link>
               <Link
                 href="/kategoriler"

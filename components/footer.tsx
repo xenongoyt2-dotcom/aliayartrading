@@ -39,12 +39,6 @@ export function Footer() {
                 Ana Sayfa
               </Link>
               <Link
-                href="/urunler"
-                className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-              >
-                Ürünler
-              </Link>
-              <Link
                 href="/kategoriler"
                 className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >

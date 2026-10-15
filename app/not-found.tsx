@@ -17,9 +17,9 @@ export default function NotFound() {
             </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="bg-transparent">
-            <Link href="/urunler">
+            <Link href="/kategoriler">
               <Search className="mr-2 h-5 w-5" />
-              Ürünleri İncele
+              Kategorileri İncele
             </Link>
           </Button>
         </div>

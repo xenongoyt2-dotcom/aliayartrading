@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next"
-import { products, categories } from "@/lib/products-data"
+import { categories } from "@/lib/categories-data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://aliayartrading.com"
@@ -11,12 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "daily" as const,
       priority: 1,
-    },
-    {
-      url: `${baseUrl}/urunler`,
-      lastModified: new Date(),
-      changeFrequency: "daily" as const,
-      priority: 0.9,
     },
     {
       url: `${baseUrl}/kategoriler`,
@@ -46,13 +40,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Product pages
-  const productPages = products.map((product) => ({
-    url: `${baseUrl}/urun/${product.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }))
-
-  return [...staticPages, ...categoryPages, ...productPages]
+  return [...staticPages, ...categoryPages]
 }

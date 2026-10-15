@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
-import { ProductGrid } from "@/components/product-grid"
-import { categories, products } from "@/lib/products-data"
+import { Button } from "@/components/ui/button"
+import { categories } from "@/lib/categories-data"
 import type { Metadata } from "next"
 
 interface CategoryPageProps {
@@ -38,7 +38,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     notFound()
   }
 
-  const categoryProducts = products.filter((p) => p.category === slug)
 
   return (
     <main className="py-12">
@@ -49,18 +48,25 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             Mercedes-Benz araçlarınız için yüksek kaliteli {category.name.toLowerCase()} ürünleri. Orijinal ve yan
             sanayi seçenekler.
           </p>
-          <div className="mt-6">
-            <span className="text-sm text-muted-foreground">{categoryProducts.length} ürün bulundu</span>
-          </div>
+
         </div>
 
-        {categoryProducts.length > 0 ? (
-          <ProductGrid category={slug} />
-        ) : (
-          <div className="text-center py-12">
-            <p className="text-lg text-muted-foreground">Bu kategoride henüz ürün bulunmamaktadır.</p>
-          </div>
-        )}
+        <div className="mx-auto max-w-2xl rounded-lg border bg-muted/30 p-8 text-center">
+          <h2 className="text-2xl font-bold mb-3">Parça ihtiyacınız için bize ulaşın</h2>
+          <p className="text-muted-foreground mb-6">
+            Aracınızın modelini, şasi numarasını veya aradığınız parçanın numarasını paylaşın;
+            uyumluluk, stok ve fiyat bilgisi için yardımcı olalım.
+          </p>
+          <Button asChild size="lg">
+            <a
+              href={`https://wa.me/905428509217?text=${encodeURIComponent(`Merhaba, ${category.name} kategorisinde parça bilgisi almak istiyorum.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp ile Bilgi Al
+            </a>
+          </Button>
+        </div>
       </div>
     </main>
   )
